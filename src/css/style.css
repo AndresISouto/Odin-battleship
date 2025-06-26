@@ -39,6 +39,10 @@ button {
   background-color: #18eab7;
 }
 
+.red {
+  background-color: red;
+}
+
 .hidden {
   display: none;
 }

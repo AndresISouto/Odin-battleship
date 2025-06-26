@@ -12,5 +12,12 @@ export function renderBoard(player) {
       playerSection.append(cell)
     }
   }
+}
+export function renderBoat(x, y) {
+  for (let i = 0; i < 3; i++) {
+    const cell = document.querySelector(`[data-x="${x}"][data-y="${y + i}"]`)
+    cell.classList.add('red')
+
+  }
 
 }
