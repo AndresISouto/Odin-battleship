@@ -1,9 +1,19 @@
-body {
+h1 {
+  text-align: center;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+}
+
+#container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5rem;
 }
+
 
 .grid {
   display: grid;
@@ -27,4 +37,8 @@ body {
 
 .blue {
   background-color: #18eab7;
+}
+
+.hidden {
+  display: none;
 }

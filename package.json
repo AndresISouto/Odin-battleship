@@ -1,6 +1,7 @@
 {
   "name": "odin-battleship",
   "version": "1.0.0",
+  "type": "module",
   "description": "small battleship game made in js",
   "main": "index.js",
   "scripts": {
