@@ -31,8 +31,20 @@ export class Gameboard {
     if (x < 1 || x > 10 || y < 1 || y > 10 || (isVertical && y + ship.size > 10) || (!isVertical && x + ship.size > 10)) {
       return false;
     }
-    if (this.board[x - 1][y - 1] !== null) {
-      return false;
+    if (isVertical) {
+      for (let i = 0; i < 3; i++) {
+        if (this.board[x - 1][y - 1 + i] !== null) {
+          return false;
+        }
+      }
+    }
+    else {
+      for (let i = 0; i < 3; i++) {
+        if (this.board[x - 1 + i][y - 1] !== null) {
+          return false;
+        }
+      }
+
     }
     return true;
   }

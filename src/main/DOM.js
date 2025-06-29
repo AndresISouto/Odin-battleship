@@ -13,10 +13,18 @@ export function renderBoard(player) {
     }
   }
 }
-export function renderBoat(x, y) {
-  for (let i = 0; i < 3; i++) {
-    const cell = document.querySelector(`[data-x="${x}"][data-y="${y + i}"]`)
-    cell.classList.add('red')
+export function renderBoat(x, y, isVertical) {
+  if (isVertical) {
+    for (let i = 0; i < 3; i++) {
+      const cell = document.querySelector(`[data-x="${x}"][data-y="${y + i}"]`)
+      cell.classList.add('red')
+    }
+  }
+  else {
+    for (let i = 0; i < 3; i++) {
+      const cell = document.querySelector(`[data-x="${x + i}"][data-y="${y}"]`)
+      cell.classList.add('red')
+    }
 
   }
 
