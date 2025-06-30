@@ -7,6 +7,7 @@ export function renderBoard(player) {
       const cell = document.createElement("article")
       cell.classList.add("square")
       cell.classList.add("blue")
+      cell.classList.add(`${player}Square`)
       cell.dataset.x = j
       cell.dataset.y = i
       playerSection.append(cell)
@@ -27,5 +28,5 @@ export function renderBoat(x, y, isVertical) {
     }
 
   }
-
 }
+
